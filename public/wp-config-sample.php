@@ -70,6 +70,12 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 
+define('WP_CONTENT_DIR', __DIR__ . '/wp-content');
+define('WP_CONTENT_URL', 'https://' . $_SERVER['SERVER_NAME'] . '/wp-content');
+define('WP_SITEURL', 'https://' . $_SERVER['SERVER_NAME'] . '/wp');
+define('WP_HOME', 'https://' . $_SERVER['SERVER_NAME']);
+
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
