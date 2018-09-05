@@ -3,18 +3,35 @@
 }
 
 .main-navigation {
-  position: relative;
   transition: 1s ease-out;
   width: var(--nav-width);
+  height: 100%;
   z-index: 4;
+  position: fixed;
+  left: 0;
+  background: hsl(var(--rich-black));
+}
+
+.main-navigation.menu-closed {
+  left: calc(-1 * var(--nav-width));
+}
+
+@media screen and ( min-width: 700px ) {
+  .main-navigation {
+    left: 0;
+  }
+  .main-navigation.menu-closed {
+    left: 0;
+  }
+}
+
+.menu-menu-1-container {
+  height: 100%;
 }
 
 .main-navigation .menu {
   transition: 1s ease-out;
   z-index: 1;
-  position: fixed;
-  left: 0;
-  width: var(--nav-width);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -89,7 +106,9 @@
 #menu-toggle {
   --main-color: var(--turquoise);
   --secondary-color: var(--radical-red);
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   transition: 1s ease-out;
   overflow: hidden;
   text-indent: -1000px;

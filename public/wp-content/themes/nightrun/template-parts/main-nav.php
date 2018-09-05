@@ -8,9 +8,8 @@
  */
 
 ?>
-
+<button class="menu-toggle closed" id="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'nightrun' ); ?></button>
 <nav id="site-navigation" class="main-navigation menu-closed">
-  <button class="menu-toggle closed" id="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'nightrun' ); ?></button>
   <?php
   wp_nav_menu( array(
     'theme_location' => 'menu-1',
