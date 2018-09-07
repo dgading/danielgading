@@ -1,0 +1,33 @@
+/*
+Fonts:
+https://fonts.google.com/specimen/Roboto
+Styles: Regular(400), Regular(italics), Bold(700)
+font-family: 'Roboto', sans-serif;
+
+https://fonts.google.com/specimen/Righteous
+Styles: Regular(400)
+font-family: 'Righteous', cursive;
+*/
+
+:root {
+  --font-header: 'Permanent Marker', cursive;
+  --font-normal: 'Roboto', sans-serif;
+  --font-callout: 'Bilbo', cursive;
+}
+
+html {
+  color: hsl(var(--snow));
+  font-family: var(--font-normal);
+  font-size: 16px;
+}
+
+@media screen and (min-width: 300px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 300px) / 700));
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 22px;
+  }
+}

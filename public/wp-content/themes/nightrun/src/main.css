@@ -10,18 +10,6 @@
 @import './css/footer.css';
 
 /*
-Fonts:
-https://fonts.google.com/specimen/Roboto
-Styles: Regular(400), Regular(italics), Bold(700)
-font-family: 'Roboto', sans-serif;
-
-https://fonts.google.com/specimen/Righteous
-Styles: Regular(400)
-font-family: 'Righteous', cursive;
-*/
-
-
-/*
 Colors:
 https://coolors.co/151515-ffe74c-2e294e-2dd881-fffbfa
 Pumpkin: #FF6C11, hsl(23, 100%, 53%)
@@ -32,16 +20,13 @@ Rich Black: #0D0221, hsl(261, 89%, 7%)
 White Smoke: #f5f5f5, hsl(0, 0%, 96%)
 */
 
-html {
+:root {
   --pumpkin: 23, 100%, 53%;
   --radical-red: 347, 100%, 61%;
   --turquoise: 181, 79%, 54%;
   --russian-violet: 261, 56%, 18%;
   --rich-black: 261, 89%, 7%;
   --white-smoke: 0, 0%, 96%;
-  --font-header: 'Permanent Marker', cursive;
-  --font-normal: 'Roboto', sans-serif;
-  --font-callout: 'Bilbo', cursive;
 }
 
 html,
@@ -51,16 +36,12 @@ body {
   min-width: 300px;
 }
 
-
-body {
-  background: linear-gradient(to bottom, hsl(var(--rich-black)) 55%,hsl(var(--russian-violet)) 67%,hsl(var(--radical-red)) 100%) fixed;
-}
-
 body {
   box-sizing: border-box;
-  background-color: transparent;
-  color: hsl(var(--snow));
+  background: linear-gradient(to bottom, hsl(var(--rich-black)) 55%,hsl(var(--russian-violet)) 67%,hsl(var(--radical-red)) 100%) fixed;
   margin: 0;
   padding: 0;
-  font-family: var(--font-normal);
+  
 }
+
+
