@@ -1,7 +1,3 @@
-#site-navigation {
-  --nav-width: 75px;
-}
-
 .main-navigation {
   transition: 1s ease-out;
   width: var(--nav-width);
@@ -104,16 +100,17 @@
 /* TOGGLE STYLES */
 
 #menu-toggle {
+  --menu-toggle-size: 50px;
   --main-color: var(--turquoise);
   --secondary-color: var(--radical-red);
   position: fixed;
   top: 0;
-  left: 0;
+  left: calc((var(--nav-width) - var(--menu-toggle-size)) / 2);
   transition: 1s ease-out;
   overflow: hidden;
   text-indent: -1000px;
-  height: 50px;
-  width: 50px;
+  height: var(--menu-toggle-size);
+  width: var(--menu-toggle-size);
   z-index: 5;
   margin: 0 auto;
   display: block;

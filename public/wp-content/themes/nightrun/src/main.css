@@ -27,6 +27,7 @@ White Smoke: #f5f5f5, hsl(0, 0%, 96%)
   --russian-violet: 261, 56%, 18%;
   --rich-black: 261, 89%, 7%;
   --white-smoke: 0, 0%, 96%;
+  --nav-width: 75px;
 }
 
 html,
@@ -41,7 +42,7 @@ body {
   background: linear-gradient(to bottom, hsl(var(--rich-black)) 55%,hsl(var(--russian-violet)) 67%,hsl(var(--radical-red)) 100%) fixed;
   margin: 0;
   padding: 0;
-  
+
 }
 
 

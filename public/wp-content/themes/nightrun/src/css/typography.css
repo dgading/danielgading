@@ -15,8 +15,12 @@ font-family: 'Righteous', cursive;
   --font-callout: 'Bilbo', cursive;
 }
 
+/*--------------------------------------------------------------
+# Root Pixel Size && Base Color & Family
+--------------------------------------------------------------*/
+
 html {
-  color: hsl(var(--snow));
+  color: hsl(var(--white-smoke));
   font-family: var(--font-normal);
   font-size: 16px;
 }
@@ -30,4 +34,88 @@ html {
   body {
     font-size: 22px;
   }
+}
+
+/*--------------------------------------------------------------
+# Headings
+--------------------------------------------------------------*/
+
+h1 {
+  font-family: var(--font-header);
+  color: hsl(var(--turquoise));
+  text-shadow: 1px 1px 2px hsla(var(--radical-red), 1);
+  font-size: 2em;
+}
+
+h2 {
+  font-family: var(--font-header);
+  color: hsl(var(--radical-red));
+  text-shadow: 1px 1px 2px hsla(var(--turquoise), 1);
+  font-size: 1.7em;
+}
+
+h3 {
+  color: hsl(var(--turquoise));
+  text-shadow: 1px 1px 2px hsla(var(--rich-black), 1);
+  font-size: 1.5em;
+}
+
+h4 {
+  color: hsl(var(--turquoise));
+  text-shadow: 1px 1px 2px hsla(var(--rich-black), 1);
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+h5 {
+  font-size: 1.1em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+/*--------------------------------------------------------------
+# Code Blocks
+--------------------------------------------------------------*/
+
+pre {
+	background-color: hsl(var(--white-smoke));
+	max-width: 100%;
+	overflow: auto;
+  padding: 1.6em;
+  color: hsl(var(--rich-black));
+}
+
+code, kbd, tt, var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 0.7em;
+}
+
+
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+  color: hsl(var(--turquoise));
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+a:visited {
+  color: hsl(var(--turquoise));
+}
+
+a:hover, a:focus, a:active {
+  transform: scale(0.9);
+  text-shadow: 1px 1px 2px hsl(var(--rich-black));
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover, a:active {
+	outline: 0;
 }

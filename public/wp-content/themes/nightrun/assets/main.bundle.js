@@ -105,7 +105,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mai
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const mainNav = document.getElementById('site-navigation');\nconst menuButton = document.getElementById('menu-toggle');\nconst menuStyle = window.getComputedStyle(mainNav);\n\nmenuButton.addEventListener('click', () => {\n  if(mainNav.classList.contains('menu-closed')) {\n    mainNav.classList.remove('menu-closed');\n    menuButton.classList.remove('closed');\n    mainNav.style.setProperty('--nav-width', '150px');\n  } else {\n    mainNav.classList.add('menu-closed');\n    menuButton.classList.add('closed');\n    mainNav.style.setProperty('--nav-width', '75px');\n  }\n});\n\n\n//# sourceURL=webpack:///./src/js/main-nav.js?");
+eval("const mainNav = document.getElementById('site-navigation');\nconst menuButton = document.getElementById('menu-toggle');\nconst menuStyle = window.getComputedStyle(mainNav);\nconst rootElement = document.documentElement;\n\nmenuButton.addEventListener('click', () => {\n  if(mainNav.classList.contains('menu-closed')) {\n    mainNav.classList.remove('menu-closed');\n    menuButton.classList.remove('closed');\n    rootElement.style.setProperty('--nav-width', '150px');\n  } else {\n    mainNav.classList.add('menu-closed');\n    menuButton.classList.add('closed');\n    rootElement.style.setProperty('--nav-width', '75px');\n  }\n});\n\n\n//# sourceURL=webpack:///./src/js/main-nav.js?");
 
 /***/ }),
 
