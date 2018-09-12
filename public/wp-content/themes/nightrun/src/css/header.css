@@ -1,15 +1,22 @@
+/*--------------------------------------------------------------
+# Site Header
+--------------------------------------------------------------*/
 .site-header {
   text-align: center;
   position: relative;
   padding: 75px 0;
 }
 
-.site-branding {
+.site-header__branding {
   position: relative;
   display: inline-block;
 }
 
-.site-header .site-title {
+/*--------------------------------------------------------------
+# Site Header Title
+--------------------------------------------------------------*/
+
+.site-header__title {
   z-index: 3;
   margin: 0;
   font-size: 4em;
@@ -18,7 +25,7 @@
   position: relative;
 }
 
-.site-header .site-title a {
+.site-header__title a {
   text-shadow: 1px 1px 2px hsl(var(--rich-black));
   text-decoration: none;
   color: hsl(var(--white-smoke));
@@ -26,7 +33,14 @@
   padding: 0;
 }
 
-.site-description {
+.site-header__title a:hover {
+  transform: none;
+}
+
+/*--------------------------------------------------------------
+# Site Header Description
+--------------------------------------------------------------*/
+.site-header__description {
   z-index: 4;
   font-family: var(--font-callout);
   color: hsl(var(--radical-red));
@@ -42,21 +56,23 @@
   text-shadow: 1px 1px 2px hsl(var(--russian-violet));
 }
 
-.title-decoration {
-
+/*--------------------------------------------------------------
+# Site Header Decoration
+--------------------------------------------------------------*/
+.site-header__decoration {
   position: absolute;
   top: -50px;
   left: 0;
 }
 
-.title-decoration.front {
+.site-header__decoration--front {
   z-index: 2;
   -webkit-filter: drop-shadow( 0px 0px 10px hsl(var(--turquoise)) );
-            filter: drop-shadow( 0px 0px 10px hsl(var(--turquoise)) );
+          filter: drop-shadow( 0px 0px 10px hsl(var(--turquoise)) );
 }
 
-.title-decoration.back {
+.site-header__decoration--back {
   z-index: 1;
   -webkit-filter: drop-shadow( 0px 0px 10px hsl(var(--pumpkin)) );
-            filter: drop-shadow( 0px 0px 10px hsl(var(--pumpkin)) );
+          filter: drop-shadow( 0px 0px 10px hsl(var(--pumpkin)) );
 }
