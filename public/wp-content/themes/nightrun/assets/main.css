@@ -527,9 +527,14 @@ a:hover::before {
   font-size: 1.5em;
 }
 
+.post-teaser .entry-header h2 a::before {
+  content: none;
+}
+
 .post-teaser .entry-header h2 a:hover,
 .post-teaser .entry-header h2 a:focus {
   text-shadow: 1px 1px 2px hsla(var(--white-smoke), 1);
+  transform: none;
 }
 
 .post-teaser .entry-header .entry-date {
