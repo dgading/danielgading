@@ -329,7 +329,7 @@ a:hover::before {
   height: 100%;
   background: hsl(var(--rich-black));
   margin: 0;
-  padding: 0;
+  padding: 75px 0 0 0;
   text-align: center;
 }
 
