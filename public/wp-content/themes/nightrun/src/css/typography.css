@@ -101,6 +101,7 @@ a {
   text-decoration: none;
   display: inline-block;
   transition: 0.5s;
+  position: relative;
 }
 
 a:visited {
@@ -118,6 +119,20 @@ a:focus {
 
 a:hover, a:active {
 	outline: 0;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  border-bottom: 1px solid hsl(var(--turquoise));
+  width: 100%;
+  transition: 0.5s;
+  height: 1px;
+}
+
+a:hover::before {
+  width: 5%;
 }
 
 /*--------------------------------------------------------------
