@@ -1,0 +1,6 @@
+@import url("./typography/lato.css");
+
+* {
+    font-family: "Lato", serif;
+    font-weight: 400;
+}
