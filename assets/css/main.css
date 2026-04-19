@@ -1,7 +1,0 @@
-@import url("./typography/lato.css");
-@import url("./typography/space-mono.css");
-
-* {
-    font-family: "Space Mono", monospace;
-    font-weight: 400;
-}
