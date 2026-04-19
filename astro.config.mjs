@@ -5,7 +5,6 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://dgading.github.io',
-  base: '/danielgading',
+  site: 'https://danielgading.com',
   integrations: [react()],
 });
